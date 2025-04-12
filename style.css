@@ -1,6 +1,7 @@
 :root{
     --primary-color: #171717;
     --secondary-color: #222222;
+    --link-color: #131313;
     --border: #fff;
     --white: #fff;
 }
@@ -17,7 +18,7 @@ body{
 }
 
 .container{
-    width: 60%;
+    width: 70%;
 }
 
 .nav-list{
@@ -121,7 +122,96 @@ body{
     height: 5rem;
 }
 
+.projects h2{
+    text-align: center;
+}
 
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    list-style: none;
+}
+
+.project-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    height: auto;
+    width: 15rem;
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.project-item-img{
+    width: 100%;
+    height: 10rem;
+    border-radius: 10px;
+    border: var(--border) solid 2px;
+}
+
+.project-item-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.project-item p, h3{
+    margin: 0;
+}
+
+.project-item a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--link-color);
+}
+
+.project-item-tec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-item-tec p{
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    border: var(--border) solid 1px;
+    border-radius: 10px;
+}
+
+.contact{
+    border-top: var(--secondary-color) solid 2px;
+    margin-top: 3rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.contact h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact p{
+    margin: 0;
+}
+
+.contact-inform{
+    margin-top: 1rem;
+}
+.contact a{
+    text-decoration: none;
+    color: var(--white);
+}
 
 @media screen and (max-width: 768px) {
     .container{
@@ -145,5 +235,15 @@ body{
     .skills-logo{
         width: auto;
         height: 4rem;
+    }
+
+    .project-list{
+        flex-direction: column;
+    }
+
+    .project-item{
+        height: auto;
+        width: auto;
+        padding: 2rem;
     }
 }

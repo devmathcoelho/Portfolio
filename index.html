@@ -12,9 +12,9 @@
     <header>
         <nav>
             <ul class="nav-list">
-                <li><a class="nav-item" href="/skills">Habilidades</a></li>
-                <li><a class="nav-item" href="/projects">Projetos</a></li>
-                <li><a class="nav-item" href="/contato">Contato</a></li>
+                <li><a class="nav-item" href="#skills">Habilidades</a></li>
+                <li><a class="nav-item" href="#projects">Projetos</a></li>
+                <li><a class="nav-item" href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -25,17 +25,18 @@
             <h1>Olá, meu nome é Matheus Coelho</h1>
             <h2>Desenvolvedor Full Stack</h2>
             <div class="social">
-                <button><a href="">Download CV</a></button>
+                <button>
+                    <a href="https://drive.google.com/file/d/1ziuJOHGMsqN2ETN-sFGwZSNvW44qRW5K/view?usp=sharing" >
+                    Download CV</a>
+                </button>
+
                 <div class="social-logo">                
                     <a href="https://www.linkedin.com/in/matheuscoelho46/"><img src="images/linkedin.png" alt="linkedin-logo"></a>
                     <a href="https://github.com/devmathcoelho"><img src="images/github.png" alt="github-logo"></a>
                 </div>
             </div>
         </section>
-        <section class="projects">
-
-        </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2>Habilidades</h2>
             <p>Desenvolvedor Full Stack com experiência em Angular, TypeScript, .NET e SqlServer.</p>
             <p>Estou sempre em busca de novos desafios e oportunidades para aprender e crescer na área de tecnologia.</p>
@@ -63,23 +64,66 @@
             </ul>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projetos</h2>
             <ul class="project-list">
                 <li class="project-item">
-                    <img src="images/mydiary.png" alt="mydiary-img">
+                    <div class="project-item-img">
+                        <img src="images/mydiary.png" alt="mydiary-img">
+                    </div>
                     <h3>My Diary</h3>
                     <p>Um aplicativo de diário pessoal que permite aos usuários registrar seu dia a dia.</p>
+
+                    <div class="project-item-tec">
+                        <p>.NET</p>
+                        <p>SqlServer</p>
+                        <p>Entity Framework</p>
+                    </div>
+                    <a href="https://github.com/devmathcoelho/My-Diary">See more</a>
                 </li>
                 <li class="project-item">
-                    <img src="images/zoomanager.png" alt="zoomanager">
+                    <div class="project-item-img">
+                        <img src="images/zoomanager.png" alt="zoomanager-img">
+                    </div>
                     <h3>Zoo Manager</h3>
                     <p>Um aplicativo de gerenciamento de zoológicos que permite aos usuários gerenciar animais, adicionar zoológicos e deletar.</p>
+
+                    <div class="project-item-tec">
+                        <p>.NET</p>
+                        <p>SqlServer</p>
+                    </div>
+                    <a href="https://github.com/devmathcoelho/ZooManager">See more</a>
+                </li>
+                <li class="project-item">
+                    <div class="project-item-img">
+                        <img src="images/sealworld.png" alt="seaworld-img">
+                    </div>
+                    <h3>Seal World</h3>
+                    <p>Uma landing page contando um pouco sobre focas e seus habitats</p>
+
+                    <div class="project-item-tec">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                    </div>
+                    <a href="https://github.com/devmathcoelho/Seal-World">See more</a>
                 </li>
             </ul>
         </section>
     </main>
-    <footer></footer>
+
+    <footer>
+        <div class="contact" id="contact">
+            <h2>Contato</h2>
+            <p>
+                Se você deseja entrar em contato comigo, sinta-se à vontade para me enviar um e-mail ou mensagem no WhatsApp.
+                
+            </p>
+            <div class="contact-inform">
+                <p>Email: mcoelho009@gmail.com</p>
+                <p>Celular: <a href="https://wa.me/5521983175689">21 98317-5689</a></p>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
