@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Matheus Coelho</title>
 </head>
@@ -41,23 +42,23 @@
             <p>Desenvolvedor Full Stack com experiência em Angular, TypeScript, .NET e SqlServer.</p>
             <p>Estou sempre em busca de novos desafios e oportunidades para aprender e crescer na área de tecnologia.</p>
             <ul class="skills-list">
-                <li class="skills-item">
+                <li data-aos="fade-up" class="skills-item">
                     <img class="skills-logo" src="images/angular.png" alt="angular-logo">
                     <p>Angular</p>
                 </li>
-                <li class="skills-item">
+                <li data-aos="fade-up" class="skills-item">
                     <img class="skills-logo" src="images/typescript.png" alt="typescript-logo">
                     <p>TypeScript</p>
                 </li>
-                <li class="skills-item">
+                <li data-aos="fade-up" class="skills-item">
                     <img class="skills-logo" src="images/dotnet.png" alt="dotnet-logo">
                     <p>.NET</p>
                 </li>
-                <li class="skills-item">
+                <li data-aos="fade-up" class="skills-item">
                     <img class="skills-logo"  src="images/sqlserver.png" alt="sqlserver-logo">
                     <p>SqlServer</p>
                 </li>
-                <li class="skills-item">
+                <li data-aos="fade-up" class="skills-item">
                     <img class="skills-logo"  src="images/entityframework.png" alt="entityframework-logo">
                     <p>Entity Framework</p>
                 </li>
@@ -67,7 +68,7 @@
         <section class="projects" id="projects">
             <h2>Projetos</h2>
             <ul class="project-list">
-                <li class="project-item">
+                <li data-aos="fade-up" class="project-item">
                     <div class="project-item-img">
                         <img src="images/mydiary.png" alt="mydiary-img">
                     </div>
@@ -81,7 +82,7 @@
                     </div>
                     <a href="https://github.com/devmathcoelho/My-Diary">See more</a>
                 </li>
-                <li class="project-item">
+                <li data-aos="fade-up" class="project-item">
                     <div class="project-item-img">
                         <img src="images/zoomanager.png" alt="zoomanager-img">
                     </div>
@@ -94,7 +95,7 @@
                     </div>
                     <a href="https://github.com/devmathcoelho/ZooManager">See more</a>
                 </li>
-                <li class="project-item">
+                <li data-aos="fade-up" class="project-item">
                     <div class="project-item-img">
                         <img src="images/sealworld.png" alt="seaworld-img">
                     </div>
@@ -112,7 +113,7 @@
     </main>
 
     <footer>
-        <div class="contact" id="contact">
+        <div data-aos="fade-up" class="contact" id="contact">
             <h2>Contato</h2>
             <p>
                 Se você deseja entrar em contato comigo, sinta-se à vontade para me enviar um e-mail ou mensagem no WhatsApp.
@@ -124,6 +125,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </div>
 </body>
 </html>
